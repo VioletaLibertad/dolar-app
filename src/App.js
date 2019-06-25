@@ -12,7 +12,9 @@ class App extends React.Component {
   }
 
   handleDateChange(data) {
-    console.log(data);
+    const startDate = data.startDate.toLocaleDateString();
+    const endDate = data.endDate.toLocaleDateString();
+    console.log(startDate, endDate);
   }
 
   render() {
