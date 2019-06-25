@@ -35,6 +35,7 @@ class DateRange extends React.Component {
       <div className="date-range-container">
         <h4>Búsqueda por rango de fechas:</h4>
         <DatePicker
+          dateFormat="yyyy/MM/dd"
           selected={this.state.startDate}
           selectsStart
           startDate={this.state.startDate}
@@ -42,6 +43,7 @@ class DateRange extends React.Component {
           onChange={this.handleChangeStart}
         />
         <DatePicker
+          dateFormat="yyyy/MM/dd"
           selected={this.state.endDate}
           selectsEnd
           startDate={this.state.startDate}
