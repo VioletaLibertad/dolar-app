@@ -2,7 +2,6 @@ import React from 'react';
 import Today from './components/Today';
 import DateRange from './components/DateRange';
 import DataResults from './components/DataResults';
-import DataChart from './components/DataChart';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,7 +35,6 @@ class App extends React.Component {
         <Today />
         <DateRange onSelectDate={this.handleDateChange} />
         <DataResults dates={this.state} />
-        <DataChart />
       </div>
     );
   }
