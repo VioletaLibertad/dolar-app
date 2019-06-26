@@ -7,14 +7,27 @@ import DataChart from './components/DataChart';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      startDate: new Date(),
+      endDate: new Date()
+    };
 
     this.handleDateChange = this.handleDateChange.bind(this);
   }
 
   handleDateChange(data) {
-    const startDate = data.startDate.toLocaleDateString();
-    const endDate = data.endDate.toLocaleDateString();
-    console.log(startDate, endDate);
+    console.log(data);
+    const options = {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    };
+    const startDate = data.startDate.toLocaleDateString("sq-SE", options);
+    const endDate = data.endDate.toLocaleDateString("sq-AL", options);
+    this.setState({
+      startDate: startDate,
+      endDate: endDate
+    });
   }
 
   render() {
@@ -22,7 +35,7 @@ class App extends React.Component {
       <div className="App">
         <Today />
         <DateRange onSelectDate={this.handleDateChange} />
-        <DataResults />
+        <DataResults dates={this.state} />
         <DataChart />
       </div>
     );
