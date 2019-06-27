@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/dolar-app/static/js/main.08be30f2.chunk.js",
+    "main.js.map": "/dolar-app/static/js/main.08be30f2.chunk.js.map",
+    "runtime~main.js": "/dolar-app/static/js/runtime~main.e4af46e2.js",
+    "runtime~main.js.map": "/dolar-app/static/js/runtime~main.e4af46e2.js.map",
+    "static/css/2.c7bb94bc.chunk.css": "/dolar-app/static/css/2.c7bb94bc.chunk.css",
+    "static/js/2.30eba6bb.chunk.js": "/dolar-app/static/js/2.30eba6bb.chunk.js",
+    "static/js/2.30eba6bb.chunk.js.map": "/dolar-app/static/js/2.30eba6bb.chunk.js.map",
+    "index.html": "/dolar-app/index.html",
+    "precache-manifest.50daec746f2603f0d2a4558a4738c215.js": "/dolar-app/precache-manifest.50daec746f2603f0d2a4558a4738c215.js",
+    "service-worker.js": "/dolar-app/service-worker.js",
+    "static/css/2.c7bb94bc.chunk.css.map": "/dolar-app/static/css/2.c7bb94bc.chunk.css.map"
+  }
+}
