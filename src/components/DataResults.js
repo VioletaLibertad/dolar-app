@@ -56,19 +56,21 @@ class DataResults extends React.Component {
   render() {
     let dolarDataArray = this.state.selectedRangeArray;
     let dolarValues = dolarDataArray.map(data => data.Valor);
-    console.log(dolarValues)
     let minDolar = dolarValues.reduce((min, v) => v < min ? v : min, dolarValues[0]);
     let maxDolar = dolarValues.reduce((max, v) => v > max ? v : max, dolarValues[0]);
-    console.log(maxDolar);
+    
+    let dolarNumbers = dolarValues.map(value => parseFloat(value.replace(/,/, '.')));
+    let sumDolar = dolarNumbers.reduce((sum, v) => sum + v, 0);
+    let averageDolar = sumDolar / dolarNumbers.length;
 
     return (
       <div className="data-results-container">
         <h3>Rango de fechas a consultar:</h3>
         {/* <h3>Entre el {starterDate} y el {endingDate}</h3> */}
-        <h5>Valor promedio para el período: </h5>
+        <h5>Valor promedio para el período: USD$ {averageDolar.toFixed(2)}</h5>
         <h5>Valor máximo alcanzado: USD$ {maxDolar}</h5>
         <h5>Valor mínimo alcanzado: USD$ {minDolar}</h5>
-        <DataChart data={this.state.selectedRangeArray}/>
+        <DataChart data={dolarNumbers}/>
       </div>
     );
   }
