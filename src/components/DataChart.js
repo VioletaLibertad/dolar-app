@@ -2,9 +2,6 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 class DataChart extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     let data = this.props.data;
 

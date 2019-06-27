@@ -27,7 +27,6 @@ class Today extends React.Component {
     return (
       <div className="today-container">
         <h1>Dolar-App</h1>
-        <h3>Tu fuente de información confiable</h3>
         <h4>El valor del dólar para hoy {this.state.dateToday} es:</h4>
         <h4>{this.state.dolarToday}</h4>
       </div>
