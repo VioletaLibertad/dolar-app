@@ -8,8 +8,6 @@ class DataResults extends React.Component {
 
     this.state = {
       selectedRangeArray: [],
-      startDate: new Date(),
-      endDate: new Date()
     };
   }
 
@@ -40,19 +38,6 @@ class DataResults extends React.Component {
     }
   }
 
-  // datesToShow() {
-  //   const options = {
-  //     weekday: "long", year: "numeric", month: "long", day: "numeric"
-  //   };
-  //   let starterDate = this.props.dates.startDate.toLocaleDateString("es-ES", options);
-  //   let endingDate = this.props.dates.endDate.toLocaleDateString("es-ES", options);
-  //   return <h3>Entre el {starterDate} y el {endingDate}</h3>
-  // }
-
-  // getMinY() {
-  //   return data.reduce((min, p) => p.y < min ? p.y : min, data[0].y);
-  // }
-
   render() {
     let dolarDataArray = this.state.selectedRangeArray;
     let dolarValues = dolarDataArray.map(data => data.Valor);
@@ -65,12 +50,10 @@ class DataResults extends React.Component {
 
     return (
       <div className="data-results-container">
-        <h3>Rango de fechas a consultar:</h3>
-        {/* <h3>Entre el {starterDate} y el {endingDate}</h3> */}
         <h5>Valor promedio para el período: USD$ {averageDolar.toFixed(2)}</h5>
         <h5>Valor máximo alcanzado: USD$ {maxDolar}</h5>
         <h5>Valor mínimo alcanzado: USD$ {minDolar}</h5>
-        <DataChart data={dolarNumbers}/>
+        <DataChart data={dolarDataArray}/>
       </div>
     );
   }

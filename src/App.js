@@ -15,7 +15,6 @@ class App extends React.Component {
   }
 
   handleDateChange(data) {
-    console.log(data);
     const options = {
       year: "numeric",
       month: "2-digit",
