@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0be466693c71ba5aa888cc68625bf035",
+    "revision": "769159e9c63744e56e392c02a209dd0f",
     "url": "/dolar-app/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dolar-app/static/js/2.30eba6bb.chunk.js"
   },
   {
-    "revision": "4ca922697beb9faa9cae",
-    "url": "/dolar-app/static/js/main.08be30f2.chunk.js"
+    "revision": "436a23c27b419edf5625",
+    "url": "/dolar-app/static/js/main.fbcee73b.chunk.js"
   },
   {
     "revision": "c098524fd33e169f3e50",
